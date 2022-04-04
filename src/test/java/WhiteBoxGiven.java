@@ -3,6 +3,7 @@ import main.java.Alcohol;
 import main.java.Dairy;
 import main.java.FrozenFood;
 import main.java.Meat;
+import main.java.Produce;
 import main.java.UnderAgeException;
 import org.junit.After;
 import org.junit.Before;
@@ -87,5 +88,25 @@ public class WhiteBoxGiven {
         cart.addItem(new Alcohol());
         cart.amountSaved(); // throw exception
     }
+
+    @Test()
+    public void getCostTest() throws UnderAgeException {
+        Cart cart = new Cart(40);
+        double cartExpected = 65.0;
+
+        for (int i = 0; i < 2; i++) {
+            cart.addItem(new Alcohol());
+        }
+        for(int i = 0; i < 3; i++) {
+            cart.addItem(new Dairy());
+        }
+        for(int i = 0; i < 4; i++) {
+            cart.addItem(new Meat());
+        }
+
+        double amount = cart.getCost();
+        assertEquals(cartExpected, amount, .01);
+    }
+
 
 }
