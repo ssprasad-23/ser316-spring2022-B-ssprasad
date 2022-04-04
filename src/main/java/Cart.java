@@ -119,4 +119,25 @@ public class Cart {
         userAge = age;
         cart = new ArrayList<Product>();
     }
+
+    /**
+     * Calculate total cost of all products
+     *
+     * @return totalCost, if cart is empty return 0
+     */
+    public double getCost() {
+
+        // if cart is empty
+        if (cart.size() == 0) {
+            return 0;
+        }
+
+        // calculate total cart amount
+        int total = 0;
+        for (Product product : cart) {
+            total += product.getCost();
+        }
+
+        return total;
+    }
 }
