@@ -65,7 +65,7 @@ public class Cart {
             else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
                 frozenFoodCounter++;
             }
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString())
+            else if (cart.get(i).getClass().toString() == Dairy.class.toString())
                 dairyCounter++;
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
