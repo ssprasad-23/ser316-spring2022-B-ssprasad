@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-
-    protected int userAge;
-    public List<Product> cart;
-    public int cartStorage;
+    /**
+     * Updated variable access modifier
+     */
+    private int userAge;
+    private final List<Product> cart;
 
     /**
      * Calculates the final cost after all savings and tax has been applied. Also checks
