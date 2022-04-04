@@ -1,6 +1,4 @@
-import main.java.*;
 import main.java.Alcohol;
-import main.java.Cart;
 import main.java.Dairy;
 import main.java.UnderAgeException;
 import org.junit.Test;

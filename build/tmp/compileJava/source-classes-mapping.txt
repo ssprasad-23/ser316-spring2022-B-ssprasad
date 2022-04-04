@@ -2,8 +2,6 @@ Meat.java
  main.java.Meat
 UnderAgeException.java
  main.java.UnderAgeException
-Main.java
- main.java.Main
 Produce.java
  main.java.Produce
 Dairy.java
@@ -13,6 +11,6 @@ Product.java
 FrozenFood.java
  main.java.FrozenFood
 Cart.java
- main.java.Cart
+ Cart
 Alcohol.java
  main.java.Alcohol
