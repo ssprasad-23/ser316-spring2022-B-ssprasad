@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WhiteBoxGiven" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-04-04T19:38:47" hostname="Shynals-MacBook-Pro.local" time="0.018">
+<testsuite name="WhiteBoxGiven" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-04-10T11:41:07" hostname="Kamruls-MacBook-Pro.local" time="0.012">
   <properties/>
-  <testcase name="calcCostTest" classname="WhiteBoxGiven" time="0.003"/>
+  <testcase name="calcCostTest" classname="WhiteBoxGiven" time="0.006"/>
   <testcase name="getTaxTest" classname="WhiteBoxGiven" time="0.0"/>
-  <testcase name="underAgeExceptionTest" classname="WhiteBoxGiven" time="0.008"/>
+  <testcase name="underAgeExceptionTest" classname="WhiteBoxGiven" time="0.001"/>
   <testcase name="removeItemTest" classname="WhiteBoxGiven" time="0.001"/>
   <testcase name="addItemTest" classname="WhiteBoxGiven" time="0.0"/>
   <testcase name="amountSavedTest" classname="WhiteBoxGiven" time="0.001"/>

@@ -1,16 +1,16 @@
 Meat.java
- main.java.Meat
+ Meat
 UnderAgeException.java
- main.java.UnderAgeException
+ UnderAgeException
 Produce.java
- main.java.Produce
+ Produce
 Dairy.java
- main.java.Dairy
+ Dairy
 Product.java
- main.java.Product
+ Product
 FrozenFood.java
- main.java.FrozenFood
+ FrozenFood
 Cart.java
  Cart
 Alcohol.java
- main.java.Alcohol
+ Alcohol

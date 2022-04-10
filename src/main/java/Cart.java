@@ -1,9 +1,4 @@
-import main.java.*;
-import main.java.Alcohol;
-import main.java.FrozenFood;
-import main.java.Produce;
-import main.java.Product;
-import main.java.UnderAgeException;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -96,7 +91,7 @@ public class Cart {
             }
 
             // if dairy removed this should be removed too
-            else if (product.getClass().toString().equals(main.java.Dairy.class.toString())) {
+            else if (product.getClass().toString().equals(Dairy.class.toString())) {
                 // update: added {}
                 dairyCounter++;
             }

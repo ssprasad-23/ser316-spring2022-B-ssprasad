@@ -1,4 +1,3 @@
- package main.java;
 
 public class Alcohol extends Product {
     public Alcohol() {

@@ -1,6 +1,3 @@
-import main.java.Alcohol;
-import main.java.Dairy;
-import main.java.UnderAgeException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -58,7 +55,7 @@ public class CostTest {
             cart.addItem(new Dairy());
         }
         for(int i = 0; i < 4; i++) {
-            cart.addItem(new main.java.Meat());
+            cart.addItem(new Meat());
         }
 
         // expected value will for getCost Method

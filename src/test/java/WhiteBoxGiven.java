@@ -1,10 +1,3 @@
-import main.java.*;
-import main.java.Alcohol;
-import main.java.Dairy;
-import main.java.FrozenFood;
-import main.java.Meat;
-import main.java.Produce;
-import main.java.UnderAgeException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -74,7 +67,7 @@ public class WhiteBoxGiven {
         cart.addItem(new FrozenFood()); // cost = 5
         cart.addItem(new Dairy()); // cost = 3
         cart.addItem(new Meat()); // cost = 10
-        cart.addItem(new main.java.Produce()); // cost = 2
+        cart.addItem(new Produce()); // cost = 2
         cart.addItem(new Produce()); // cost = 2
         cart.addItem(new Produce()); // cost = 2
 
