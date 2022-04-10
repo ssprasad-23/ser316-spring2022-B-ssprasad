@@ -1,4 +1,3 @@
-package main.java;
 
 public class FrozenFood extends Product {
     public FrozenFood() {
