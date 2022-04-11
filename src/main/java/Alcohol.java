@@ -1,5 +1,4 @@
 
-
 public class Alcohol extends Product {
     public Alcohol() {
         super(8);

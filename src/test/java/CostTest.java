@@ -1,28 +1,18 @@
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.lang.reflect.Constructor;
 import java.util.Arrays;
 import java.util.Collection;
-
-import main.java.Cart0;
-import main.java.Cart1;
-import main.java.Cart2;
-import main.java.Cart3;
-import main.java.Cart4;
-import main.java.Cart5;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class BlackBoxGiven {
+public class CostTest {
 
-    private Class<Cart> classUnderTest;
+    private final Class<Cart> classUnderTest;
 
     @SuppressWarnings("unchecked")
-    public BlackBoxGiven(Object classUnderTest) {
+    public CostTest(Object classUnderTest) {
         this.classUnderTest = (Class<Cart>) classUnderTest;
     }
 
@@ -30,12 +20,12 @@ public class BlackBoxGiven {
     @Parameterized.Parameters
     public static Collection<Object[]> cartClassUnderTest() {
         Object[][] classes = {
-            {Cart0.class},
-            {Cart1.class},
-            {Cart2.class},
-            {Cart3.class},
-            {Cart4.class},
-            {Cart5.class}
+                {Cart.class},
+                {Cart.class},
+                {Cart.class},
+                {Cart.class},
+                {Cart.class},
+                {Cart.class}
         };
         return Arrays.asList(classes);
     }
@@ -47,8 +37,8 @@ public class BlackBoxGiven {
 
     // A sample Cart
 
-    Cart cart1;
-    double cart1Expected;
+    Cart cart;
+    double cartExpected;
 
 
     @org.junit.Before
@@ -57,24 +47,24 @@ public class BlackBoxGiven {
         // all carts should be set up like this
 
         // cart created with an age 40 shopper
-        cart1 = createCart(40);
+        cart = createCart(40);
         for (int i = 0; i < 2; i++) {
-            cart1.addItem(new Alcohol());
+            cart.addItem(new Alcohol());
         }
         for(int i = 0; i < 3; i++) {
-            cart1.addItem(new Dairy());
+            cart.addItem(new Dairy());
         }
         for(int i = 0; i < 4; i++) {
-            cart1.addItem(new Meat());
+            cart.addItem(new Meat());
         }
 
-        cart1Expected = 70.2;
+        // expected value will for getCost Method
+        cartExpected = 65.0;
     }
 
-    // sample test
     @Test
-    public void calcCostCart1() throws UnderAgeException {
-        double amount = cart1.calcCost();
-        assertEquals(cart1Expected, amount, .01);
+    public void getCost() throws UnderAgeException {
+        double amount = cart.getCost();
+        assertEquals(cartExpected, amount, .01);
     }
 }
