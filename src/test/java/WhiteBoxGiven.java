@@ -1,10 +1,3 @@
-import main.java.*;
-import main.java.Alcohol;
-import main.java.Dairy;
-import main.java.FrozenFood;
-import main.java.Meat;
-import main.java.Produce;
-import main.java.UnderAgeException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -107,6 +100,4 @@ public class WhiteBoxGiven {
         double amount = cart.getCost();
         assertEquals(cartExpected, amount, .01);
     }
-
-
 }

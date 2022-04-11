@@ -1,6 +1,3 @@
-import main.java.Alcohol;
-import main.java.Dairy;
-import main.java.UnderAgeException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -8,6 +5,14 @@ import java.lang.reflect.Constructor;
 import java.util.Arrays;
 import java.util.Collection;
 import static org.junit.Assert.assertEquals;
+import main.java.Cart0;
+import main.java.Cart1;
+import main.java.Cart2;
+import main.java.Cart3;
+import main.java.Cart4;
+import main.java.Cart5;
+import static org.junit.Assert.*;
+
 
 @RunWith(Parameterized.class)
 public class CostTest {

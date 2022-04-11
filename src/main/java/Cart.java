@@ -1,10 +1,3 @@
-import main.java.*;
-import main.java.Alcohol;
-import main.java.FrozenFood;
-import main.java.Produce;
-import main.java.Product;
-import main.java.UnderAgeException;
-
 import java.util.ArrayList;
 import java.util.List;
 
