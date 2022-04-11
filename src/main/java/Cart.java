@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-
-    protected int userAge;
-    public List<Product> cart;
-    public int cartStorage;
+    /**
+     * Updated variable access modifier
+     */
+    private int userAge;
+    private final List<Product> cart;
 
     /**
      * Calculates the final cost after all savings and tax has been applied. Also checks
@@ -64,7 +65,7 @@ public class Cart {
             else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
                 frozenFoodCounter++;
             }
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString())
+            else if (cart.get(i).getClass().toString() == Dairy.class.toString())
                 dairyCounter++;
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
@@ -78,9 +79,9 @@ public class Cart {
     }
 
     // Gets the tax based on state and the total
-    public double getTax(double totalBT, String twoLetterUSStateAbbreviation) {
+    public double getTax(double totalBT, String uSState) {
         double newTotal = 0;
-        switch (twoLetterUSStateAbbreviation) {
+        switch (uSState) {
             case "AZ":
                 newTotal = totalBT * .08;
                 break;
