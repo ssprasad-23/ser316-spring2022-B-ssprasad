@@ -1,7 +1,6 @@
 # Editor-based Rest Client
 .idea/httpRequests
 
-<<<<<<< HEAD
 .git
 .vscode
 
@@ -14,7 +13,6 @@
 
 .vscode
 
->>>>>>> master
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
