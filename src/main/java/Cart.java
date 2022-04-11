@@ -92,7 +92,6 @@ public class Cart {
 
             // if dairy removed this should be removed too
             else if (product.getClass().toString().equals(Dairy.class.toString())) {
-                // update: added {}
                 dairyCounter++;
             }
 
@@ -106,18 +105,10 @@ public class Cart {
         return subTotal - costAfterSavings;
     }
 
-    /**
-     * Gets the tax based on state and the total
-     *
-     * @param totalBT total cost without tax
-     * @param twoLetterUSStateAbbreviation us's state
-     * @return total tax based on
-     */
-    public double getTax(double totalBT, String twoLetterUSStateAbbreviation) {
-        /*
-         * Removed unnecessary codes, that create smells
-         */
-        switch (twoLetterUSStateAbbreviation) {
+    // Gets the tax based on state and the total
+    public double getTax(double totalBT, String uSState) {
+        double newTotal = 0;
+        switch (uSState) {
             case "AZ":
                 return totalBT * .08;
             case "CA":
