@@ -170,9 +170,10 @@ public class Cart {
         return total;
     }
 
-    /*
+    // ’SER316 TASK 2 SPOTBUGS FIX
+/*    *//*
      * Updated : added required all getter, setter
-     */
+     *//*
     public int getUserAge() {
         return userAge;
     }
@@ -183,5 +184,5 @@ public class Cart {
 
     public List<Product> getCart() {
         return cart;
-    }
+    }*/
 }
