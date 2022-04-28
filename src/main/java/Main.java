@@ -30,5 +30,6 @@ public class Main {
 
         System.out.println(cart.calcCost());
         System.out.println(cart.Amount_saved());
+        //git config user.name "Shynal Prasad"
     }
 }
