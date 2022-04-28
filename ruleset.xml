@@ -34,5 +34,4 @@
 </rule>
 <rule ref="category/java/bestpractices.xml/LooseCoupling" />
 
-
 </ruleset>

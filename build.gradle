@@ -28,6 +28,10 @@ dependencies {
     compile files('cls/')
 }
 
+test {
+    exclude "**/BlackBoxGiven.class"
+}
+
 apply plugin: "pmd"
 pmd {
     ignoreFailures = true

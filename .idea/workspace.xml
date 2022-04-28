@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74a90493-cdf5-4ec0-ae78-606bf45d06d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="28NuFCkQNhd7fQvqJkp6FnFOEaj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,6 +82,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+    </option>
   </component>
   <component name="RunManager" selected="Gradle.ser316-spring2022-B-ssprasad [build]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -166,25 +174,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1870" height="257" key="GridCell.Tab.0.bottom" timestamp="1651083568368">
+    <state width="1870" height="203" key="GridCell.Tab.0.bottom" timestamp="1651160786350">
       <screen x="0" y="25" width="1920" height="1002" />
     </state>
-    <state width="1870" height="257" key="GridCell.Tab.0.bottom/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651083568367" />
-    <state width="1870" height="257" key="GridCell.Tab.0.center" timestamp="1651083568366">
+    <state width="1870" height="203" key="GridCell.Tab.0.bottom/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651160786350" />
+    <state width="1870" height="203" key="GridCell.Tab.0.center" timestamp="1651160786349">
       <screen x="0" y="25" width="1920" height="1002" />
     </state>
-    <state width="1870" height="257" key="GridCell.Tab.0.center/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651083568366" />
-    <state width="1870" height="257" key="GridCell.Tab.0.left" timestamp="1651083568366">
+    <state width="1870" height="203" key="GridCell.Tab.0.center/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651160786349" />
+    <state width="1870" height="203" key="GridCell.Tab.0.left" timestamp="1651160786348">
       <screen x="0" y="25" width="1920" height="1002" />
     </state>
-    <state width="1870" height="257" key="GridCell.Tab.0.left/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651083568366" />
-    <state width="1870" height="257" key="GridCell.Tab.0.right" timestamp="1651083568367">
+    <state width="1870" height="203" key="GridCell.Tab.0.left/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651160786348" />
+    <state width="1870" height="203" key="GridCell.Tab.0.right" timestamp="1651160786349">
       <screen x="0" y="25" width="1920" height="1002" />
     </state>
-    <state width="1870" height="257" key="GridCell.Tab.0.right/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651083568367" />
+    <state width="1870" height="203" key="GridCell.Tab.0.right/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651160786349" />
     <state x="555" y="168" key="NewModule_or_Project.wizard" timestamp="1651081968176">
       <screen x="0" y="25" width="1920" height="1002" />
     </state>
     <state x="555" y="168" key="NewModule_or_Project.wizard/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651081968175" />
+    <state x="541" y="238" width="838" height="1032" key="run.anything.popup" timestamp="1651160778612">
+      <screen x="0" y="25" width="1920" height="1002" />
+    </state>
+    <state x="541" y="238" width="838" height="1032" key="run.anything.popup/-1280.305.1280.775/0.25.1920.1002@0.25.1920.1002" timestamp="1651160778612" />
   </component>
 </project>
