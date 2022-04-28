@@ -31,14 +31,12 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-        //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
-        return 0;
+        return (getCost() - amountSaved()) * ((100 - getDiscount()) / 100);
     }
 
     /**
      * calculates how much was saved in the current shopping cart based on the deals,
      * returns the saved amount throws exception if alcohol is bought from underage person
-     * TODO: Create node graph for this method in assign 4: create white box tests and fix the method,
      * reach at least 98% coverage
      *
      * @return saved amount
@@ -112,7 +110,6 @@ public class Cart {
         }
     }
 
-
     /**
      * Add product in cart list
      *
@@ -122,9 +119,6 @@ public class Cart {
         cart.add(product);
     }
 
-    /*
-     * Updated method name RemoveItem -> removeItem
-     */
 
     /**
      * The method will remove product from cart
@@ -140,9 +134,7 @@ public class Cart {
             if (cart.get(i) == productToRemove) {
                 cart.remove(i);
 
-                /*
-                remove test return true
-                 */
+                // remove test return true
                 return true;
             }
         }
@@ -170,19 +162,49 @@ public class Cart {
         return total;
     }
 
-    // ’SER316 TASK 2 SPOTBUGS FIX
-/*    *//*
-     * Updated : added required all getter, setter
-     *//*
-    public int getUserAge() {
-        return userAge;
+    /**
+     * Calculate discount based product list
+     *
+     * @return total present of discount
+     */
+    public double getDiscount() {
+        int dairy = 0;
+        int meat = 0;
+        int produce = 0;
+        int alcohol = 0;
+        int total3X = 0;
+
+        for (Product product : cart) {
+            if (product instanceof Dairy) {
+                dairy++;
+                if (dairy > 2) {
+                    total3X++;
+                }
+            } else if (product instanceof Meat) {
+                meat++;
+                if (meat > 2) {
+                    total3X++;
+                }
+            } else if (product instanceof Produce) {
+                produce++;
+                if (produce > 2) {
+                    total3X++;
+                }
+            } else if (product instanceof Alcohol) {
+                alcohol++;
+                if (alcohol > 2) {
+                    total3X++;
+                }
+            }
+        }
+
+        if (total3X > 2) {
+            return 10;
+        } else if (total3X > 0) {
+            return 5;
+        } else {
+            return 0;
+        }
     }
 
-    public void setUserAge(int userAge) {
-        this.userAge = userAge;
-    }
-
-    public List<Product> getCart() {
-        return cart;
-    }*/
 }
