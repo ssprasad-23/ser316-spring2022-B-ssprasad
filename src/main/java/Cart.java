@@ -4,7 +4,7 @@ import java.util.List;
 public class Cart {
 
     // Updated variable access modifier
-    private int userAge;
+    private final int userAge;
     private final List<Product> cart;
 
     // init age and init empty cart list
@@ -52,9 +52,6 @@ public class Cart {
         int alcoholCounter = 0;
         int frozenFoodCounter = 0;
 
-        // maybe we can remove dairy from this method cause we are not using this anywhere
-        int dairyCounter = 0;
-
         // updated to for enhance loop
         for (Product product : cart) {
             subTotal += product.getCost();
@@ -78,11 +75,6 @@ public class Cart {
                 frozenFoodCounter++;
             }
 
-            // if dairy removed this should be removed too
-            else if (product.getClass().toString().equals(Dairy.class.toString())) {
-                dairyCounter++;
-            }
-
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                 costAfterSavings += 3;
                 alcoholCounter--;
@@ -95,7 +87,6 @@ public class Cart {
 
     // Gets the tax based on state and the total
     public double getTax(double totalBT, String uSState) {
-        double newTotal = 0;
         switch (uSState) {
             case "AZ":
                 return totalBT * .08;
@@ -123,22 +114,11 @@ public class Cart {
     /**
      * The method will remove product from cart
      *
-     * @param productToRemove product that need to remove
+     * @param product product that need to remove
      * @return ture if removed else false
      */
-    public boolean removeItem(Product productToRemove) {
-        /*
-         * removed : boolean test = false;
-         */
-        for (int i = 0; i < cart.size(); i++) {
-            if (cart.get(i) == productToRemove) {
-                cart.remove(i);
-
-                // remove test return true
-                return true;
-            }
-        }
-        return false;
+    public boolean removeItem(Product product) {
+        return cart.remove(product);
     }
 
     /**
